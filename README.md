@@ -1,11 +1,11 @@
 **rx-streaming** is a project which demonstrates the use of SseEmitter from Spring to emit the data whenever it is available with the server.
 
 This project uses -
-* Spring Boot
-* rx-java
-* AngularJS
+  * Spring Boot
+  * rx-java
+  * AngularJS
 
-In order to emit events, SseEmitter is used which sends the events as and when they are available. Events are emitted in a separate thread using @Async annotation from Spring.
+In order to emit events, SseEmitter is used which sends the events as and when they are available. Events are emitted in a separate thread using **@Async** annotation from Spring.
 
 AngularJS uses EventSource to establish a connection with the server and registers a listener on message event to handle message events which are emitted.
 
