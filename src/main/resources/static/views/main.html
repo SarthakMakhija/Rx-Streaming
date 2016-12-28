@@ -1,0 +1,22 @@
+<html ng-app="sse">
+
+<head><title>AngularJS SSE Application</title></head>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.10/angular.min.js"></script>
+<script src = "../js/products.controller.js"></script>
+
+<body>
+<h1>SSE Application</h1>
+    <div ng-controller="productsCtrl" ng-init="findAll()">
+         <table width="90%" align="center">
+             <tr ng-repeat="p in products track by $index">
+                <td>
+                    {{p.productId}}
+                </td>
+                 <td>
+                     {{p.productName}}
+                 </td>
+             </tr>
+         </table>
+    </div>
+</body>
+</html>
